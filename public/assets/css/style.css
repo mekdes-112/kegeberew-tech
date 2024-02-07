@@ -1070,6 +1070,15 @@ h6,
     background-size: cover;
 }
 
+.bg-headerone {
+  background: linear-gradient(rgba(27, 32, 40, 0.4), rgba(27, 32, 40, 0.4)), url(../img/smoothtwo.png) center center no-repeat;
+  background-size: cover;
+}
+
+.bg-headertwo {
+  background: linear-gradient(rgba(27, 32, 40, 0.4), rgba(27, 32, 40, 0.4)), url(../img/smoothone.png) center center no-repeat;
+  background-size: cover;
+}
 .link-animated a {
     transition: .5s;
 }

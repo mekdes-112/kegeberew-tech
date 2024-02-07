@@ -382,11 +382,12 @@ const AboutUs = () => {
           </p>
           <p className="mb-2">
             <i className="fa fa-phone-alt me-3" />
-            +012 345 67890
+            (+251) 946-545-454
           </p>
           <p className="mb-2">
             <i className="fa fa-envelope me-3" />
-            info@example.com
+            info@kegeberew.com ,
+            info@chinatoafrika.com
           </p>
           <div className="d-flex pt-2">
             <NavLink
@@ -426,9 +427,9 @@ const AboutUs = () => {
           <NavLink className="btn btn-link" to="/projects">
             Our Projects
           </NavLink>
-          <NavLink className="btn btn-link" to="/careers">
+          {/* <NavLink className="btn btn-link" to="/careers">
             careers
-          </NavLink>
+          </NavLink> */}
           <NavLink className="btn btn-link" to="/contact">
             Contact Us
           </NavLink>
@@ -439,42 +440,42 @@ const AboutUs = () => {
             <div className="col-4">
               <img
                 className="img-fluid rounded"
-                src="../../assets/img/project-1.jpg"
+                src="../../assets/img/biro1.jpg"
                 alt=""
               />
             </div>
             <div className="col-4">
               <img
                 className="img-fluid rounded"
-                src="../../assets/img/project-2.jpg"
+                src="../../assets/img/biro2.jpg"
                 alt=""
               />
             </div>
             <div className="col-4">
               <img
                 className="img-fluid rounded"
-                src="../../assets/img/project-3.jpg"
+                src="../../assets/img/biro3.jpg"
                 alt=""
               />
             </div>
             <div className="col-4">
               <img
                 className="img-fluid rounded"
-                src="../../assets/img/project-4.jpg"
+                src="../../assets/img/biro4.jpg"
                 alt=""
               />
             </div>
             <div className="col-4">
               <img
                 className="img-fluid rounded"
-                src="../../assets/img/project-5.jpg"
+                src="../../assets/img/biro5.jpg"
                 alt=""
               />
             </div>
             <div className="col-4">
               <img
                 className="img-fluid rounded"
-                src="../../assets/img/project-6.jpg"
+                src="../../assets/img/biro6.jpg"
                 alt=""
               />
             </div>

@@ -508,15 +508,16 @@ const Services = () => {
           <h5 className="text-light mb-4">Address</h5>
           <p className="mb-2">
             <i className="fa fa-map-marker-alt me-3" />
-            123 Street, New York, USA
+            Addis Ababa, Ethiopia
           </p>
           <p className="mb-2">
             <i className="fa fa-phone-alt me-3" />
-            +012 345 67890
+            (+251) 946-545-454
           </p>
           <p className="mb-2">
             <i className="fa fa-envelope me-3" />
-            info@example.com
+            info@kegeberew.com ,
+            info@chinatoafrika.com
           </p>
           <div className="d-flex pt-2">
             <NavLink
@@ -547,20 +548,20 @@ const Services = () => {
         </div>
         <div className="col-lg-3 col-md-6">
           <h5 className="text-light mb-4">Quick Links</h5>
-          <NavLink className="btn btn-link" to="">
+          <NavLink className="btn btn-link" to="/about">
             About Us
           </NavLink>
-          <NavLink className="btn btn-link" to="">
-            Contact Us
-          </NavLink>
-          <NavLink className="btn btn-link" to="">
+          <NavLink className="btn btn-link" to="/services">
             Our Services
           </NavLink>
-          <NavLink className="btn btn-link" to="">
-            Terms &amp; Condition
+          <NavLink className="btn btn-link" to="/projects">
+            Our Projects
           </NavLink>
-          <NavLink className="btn btn-link" to="">
-            Support
+          {/* <NavLink className="btn btn-link" to="/careers">
+            careers
+          </NavLink> */}
+          <NavLink className="btn btn-link" to="/contact">
+            Contact Us
           </NavLink>
         </div>
         <div className="col-lg-3 col-md-6">
@@ -569,50 +570,50 @@ const Services = () => {
             <div className="col-4">
               <img
                 className="img-fluid rounded"
-                src="../../assets/img/project-1.jpg"
+                src="../../assets/img/biro1.jpg"
                 alt=""
               />
             </div>
             <div className="col-4">
               <img
                 className="img-fluid rounded"
-                src="../../assets/img/project-2.jpg"
+                src="../../assets/img/biro2.jpg"
                 alt=""
               />
             </div>
             <div className="col-4">
               <img
                 className="img-fluid rounded"
-                src="../../assets/img/project-3.jpg"
+                src="../../assets/img/biro3.jpg"
                 alt=""
               />
             </div>
             <div className="col-4">
               <img
                 className="img-fluid rounded"
-                src="../../assets/img/project-4.jpg"
+                src="../../assets/img/biro4.jpg"
                 alt=""
               />
             </div>
             <div className="col-4">
               <img
                 className="img-fluid rounded"
-                src="../../assets/img/project-5.jpg"
+                src="../../assets/img/biro5.jpg"
                 alt=""
               />
             </div>
             <div className="col-4">
               <img
                 className="img-fluid rounded"
-                src="../../assets/img/project-6.jpg"
+                src="../../assets/img/biro6.jpg"
                 alt=""
               />
             </div>
           </div>
         </div>
         <div className="col-lg-3 col-md-6">
-          <h5 className="text-light mb-4">Newsletter</h5>
-          <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
+          <h5 className="text-light mb-4">A Little About Us</h5>
+          <p>At KTS, we are driven by a relentless passion for technology and a commitment to delivering cutting-edge solutions that empower businesses to thrive in the digital era.</p>
           <NavLink
             to=""
             className="btn btn-secondary text-white px-5 py-3 rounded-pill"

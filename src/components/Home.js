@@ -4,7 +4,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import Shuffle from 'shufflejs';
-import OwlCarousel from 'react-owl-carousel2';
+// import OwlCarousel from 'react-owl-carousel2';
 import 'react-owl-carousel2/lib/styles.css';
 import './Testimonials.css';
 import WOW from 'wow.js';
@@ -33,41 +33,41 @@ const Home = () => {
     wow.init();
   }, []);
 
-  const options = {
-    items: 3,
-    loop: true,
-    margin: 10,
-    nav: true,
-  };
+  // const options = {
+  //   items: 3,
+  //   loop: true,
+  //   margin: 10,
+  //   nav: true,
+  // };
 
-  const testimonialsData = [
-    {
-      clientName: 'Client 1',
-      profession: 'Profession 1',
-      testimonial: 'Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam',
-      imageUrl: '../../assets/img/testimonial-1.jpg',
-    },
+  // const testimonialsData = [
+  //   {
+  //     clientName: 'Client 1',
+  //     profession: 'Profession 1',
+  //     testimonial: 'Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam',
+  //     imageUrl: '../../assets/img/testimonial-1.jpg',
+  //   },
 
-    {
-      clientName: 'Client 2',
-      profession: 'Profession 2',
-      testimonial: 'Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam',
-      imageUrl: '../../assets/img/testimonial-4.jpg',
-    },
-    {
-      clientName: 'Client 3',
-      profession: 'Profession 3',
-      testimonial: 'Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam',
-      imageUrl: '../../assets/img/testimonial-2.jpg',
-    },
-    {
-      clientName: 'Client 4',
-      profession: 'Profession 4',
-      testimonial: 'Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam',
-      imageUrl: '../../assets/img/testimonial-3.jpg',
-    },
-    // Add more testimonials as needed
-  ];
+  //   {
+  //     clientName: 'Client 2',
+  //     profession: 'Profession 2',
+  //     testimonial: 'Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam',
+  //     imageUrl: '../../assets/img/testimonial-4.jpg',
+  //   },
+  //   {
+  //     clientName: 'Client 3',
+  //     profession: 'Profession 3',
+  //     testimonial: 'Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam',
+  //     imageUrl: '../../assets/img/testimonial-2.jpg',
+  //   },
+  //   {
+  //     clientName: 'Client 4',
+  //     profession: 'Profession 4',
+  //     testimonial: 'Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam',
+  //     imageUrl: '../../assets/img/testimonial-3.jpg',
+  //   },
+  //   // Add more testimonials as needed
+  // ];
 
   const [activeFilter, setActiveFilter] = useState('all');
 
@@ -1203,7 +1203,7 @@ const Home = () => {
             <div className="col-1 shuffle-sizer" />
             <div
               className="col-lg-4 col-md-6 shuffle-item"
-              data-groups='["government","healthcare"]'
+              data-groups='["commercial"]'
             >
               <div className="project-img-container">
                 <NavLink
@@ -1224,7 +1224,7 @@ const Home = () => {
                         K.A.P.S
                       </NavLink>
                     </h3>
-                    <button className="read-more-btn">Read More</button>
+                    <NavLink className="read-more-btn" to="/kaps">Read More</NavLink>
                   </div>
                 </div>
               </div>
@@ -1232,7 +1232,7 @@ const Home = () => {
             {/* shuffle item 1 end */}
             <div
               className="col-lg-4 col-md-6 shuffle-item"
-              data-groups='["healthcare"]'
+              data-groups='["commercial"]'
             >
               <div className="project-img-container">
                 <NavLink
@@ -1251,7 +1251,7 @@ const Home = () => {
                     <h3 className="project-item-title">
                       <NavLink to="projects-single.html">Kegeberew University</NavLink>
                     </h3>
-                    <button className="read-more-btn">Read More</button>
+                    <NavLink className="read-more-btn" to="https://kegeberewuniversity.com/">Read More</NavLink>
                   </div>
                 </div>
               </div>
@@ -1259,7 +1259,7 @@ const Home = () => {
             {/* shuffle item 2 end */}
             <div
               className="col-lg-4 col-md-6 shuffle-item"
-              data-groups='["infrastructure","commercial"]'
+              data-groups='["commercial"]'
             >
               <div className="project-img-container">
                 <NavLink
@@ -1269,16 +1269,16 @@ const Home = () => {
                 >
                   <img
                     className="img-fluid"
-                    src="../../assets/images/projects/project.jpg"
+                    src="../../assets/images/projects/project.png"
                     alt="project-img"
                   />
                 </NavLink>
                 <div className="project-item-info">
                   <div className="project-item-info-content">
                     <h3 className="project-item-title">
-                      <NavLink to="projects-single.html">TNT East Facility</NavLink>
+                      <NavLink to="projects-single.html">Purpose Black Eth.</NavLink>
                     </h3>
-                    <button className="read-more-btn">Read More</button>
+                    <NavLink className="read-more-btn" to="https://purposeblacketh.com/">Read More</NavLink>
                   </div>
                 </div>
               </div>
@@ -1286,7 +1286,7 @@ const Home = () => {
             {/* shuffle item 3 end */}
             <div
               className="col-lg-4 col-md-6 shuffle-item"
-              data-groups='["education","infrastructure"]'
+              data-groups='["commercial"]'
             >
               <div className="project-img-container">
                 <NavLink
@@ -1303,9 +1303,9 @@ const Home = () => {
                 <div className="project-item-info">
                   <div className="project-item-info-content">
                     <h3 className="project-item-title">
-                      <NavLink to="projects-single.html">Narriot Headquarters</NavLink>
+                      <NavLink to="projects-single.html">Kegeberew.com</NavLink>
                     </h3>
-                    <button className="read-more-btn">Read More</button>
+                    <NavLink className="read-more-btn" to="https://kegeberew.com/">Read More</NavLink>
                   </div>
                 </div>
               </div>
@@ -1313,7 +1313,7 @@ const Home = () => {
             {/* shuffle item 4 end */}
             <div
               className="col-lg-4 col-md-6 shuffle-item"
-              data-groups='["infrastructure","education"]'
+              data-groups='["commercial"]'
             >
               <div className="project-img-container">
                 <NavLink
@@ -1330,9 +1330,9 @@ const Home = () => {
                 <div className="project-item-info">
                   <div className="project-item-info-content">
                     <h3 className="project-item-title">
-                      <NavLink to="projects-single.html">Kalas Metrorail</NavLink>
+                      <NavLink to="projects-single.html">Kegeberew TV</NavLink>
                     </h3>
-                    <button className="read-more-btn">Read More</button>
+                    <NavLink className="read-more-btn" to="https://kegeberewtv.com/">Read More</NavLink>
                   </div>
                 </div>
               </div>
@@ -1340,7 +1340,7 @@ const Home = () => {
             {/* shuffle item 5 end */}
             <div
               className="col-lg-4 col-md-6 shuffle-item"
-              data-groups='["residential"]'
+              data-groups='["commercial"]'
             >
               <div className="project-img-container">
                 <NavLink
@@ -1357,13 +1357,41 @@ const Home = () => {
                 <div className="project-item-info">
                   <div className="project-item-info-content">
                     <h3 className="project-item-title">
-                      <NavLink to="projects-single.html">Ancraft Avenue House</NavLink>
+                      <NavLink to="projects-single.html">Agri-Innoviation</NavLink>
                     </h3>
-                    <button className="read-more-btn">Read More</button>
+                    <button className="read-more-btn" to="https://agrinnovation.net/">Read More</button>
                   </div>
                 </div>
               </div>
             </div>
+            {/* shuffle item 5 end */}
+            <div
+              className="col-lg-4 col-md-6 shuffle-item"
+              data-groups='["commercial"]'
+            >
+              <div className="project-img-container">
+                <NavLink
+                  className="gallery-popup"
+                  to="../../assets/images/projects/kccm.png"
+                  aria-label="project-img"
+                >
+                  <img
+                    className="img-fluid"
+                    src="../../assets/images/projects/kccm.png"
+                    alt="project-img"
+                  />
+                </NavLink>
+                <div className="project-item-info">
+                  <div className="project-item-info-content">
+                    <h3 className="project-item-title">
+                      <NavLink to="projects-single.html">Kegeberew Credit</NavLink>
+                    </h3>
+                    <NavLink className="read-more-btn" to="/kccsm">Read More</NavLink>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
             {/* shuffle item 6 end */}
           </div>
           {/* shuffle end */}
@@ -1397,32 +1425,61 @@ const Home = () => {
           style={{ maxWidth: 600 }}
         >
           <h5 className="" style={{ color: "white" }}>
-            Testimonials
+            Our Management
           </h5>
-          <h1 style={{ color: "white" }}>What out clients say about us</h1>
+         
         </div>
       </div>
-      <OwlCarousel options={options}>
-          {testimonialsData.map((testimonial, index) => (
-            <div key={index} className="testimonial-item bg-light my-4">
-              <div className="d-flex align-items-center border-bottom pt-5 pb-4 px-5">
-                <img
-                  className="img-fluid rounded"
-                  src={testimonial.imageUrl}
-                  alt={`Client ${index + 1}`}
-                  style={{ width: 60, height: 60 }}
-                />
-                <div className="ps-4">
-                  <h4 className="text-primary mb-1">{testimonial.clientName}</h4>
-                  <small className="text-uppercase">{testimonial.profession}</small>
-                </div>
-              </div>
-              <div className="pt-4 pb-5 px-5">
-                {testimonial.testimonial}
-              </div>
-            </div>
-          ))}
-        </OwlCarousel>
+
+      <div className="row g-5">
+  <div className="col-lg-4 wow slideInUp" data-wow-delay="0.3s">
+    <div className="team-item bg-light rounded overflow-hidden">
+      <div className="team-img position-relative overflow-hidden">
+        <img className="img-fluid w-100" src="../../assets/img/doctor.png" alt="" />
+        <div className="team-social">
+          
+        
+        
+         
+        </div>
+      </div>
+      <div className="text-center py-4">
+        <h4 className="text-primary">Dr. Fisseha Eshetu</h4>
+        <p className="text-uppercase m-0">Purposeblack C.E.O</p>
+      </div>
+    </div>
+  </div>
+  <div className="col-lg-4 wow slideInUp" data-wow-delay="0.6s">
+    <div className="team-item bg-light rounded overflow-hidden">
+      <div className="team-img position-relative overflow-hidden">
+        <img className="img-fluid w-100" src="../../assets/img/amanuel.png" alt="" />
+        <div className="team-social">
+        
+        </div>
+      </div>
+      <div className="text-center py-4">
+        <h4 className="text-primary">Mr.Amanuel Melese</h4>
+        <p className="text-uppercase m-0">KTS General Manager</p>
+      </div>
+    </div>
+  </div>
+  <div className="col-lg-4 wow slideInUp" data-wow-delay="0.9s">
+    <div className="team-item bg-light rounded overflow-hidden">
+      <div className="team-img position-relative overflow-hidden">
+        <img className="img-fluid w-100" src="../../assets/img/amani.png" alt="" />
+        <div className="team-social">
+         
+        </div>
+      </div>
+      <div className="text-center py-4">
+        <h4 className="text-primary">Mr.Amanuel Chala</h4>
+        <p className="text-uppercase m-0">KTS Dpt Manager</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+     
       
       {/* <div
         className="owl-carousel testimonial-carousel wow fadeInUp"
@@ -1815,7 +1872,8 @@ const Home = () => {
             </span>
             <div className="ts-service-box-content">
               <h4>Email Us</h4>
-              <p>purposeblack.it@gmail.com</p>
+              <p>info@kegeberew.com</p> or
+              <p>info@chinatoafrika.com</p>
             </div>
           </div>
         </div>
@@ -1827,7 +1885,8 @@ const Home = () => {
             </span>
             <div className="ts-service-box-content">
               <h4>Call Us</h4>
-              <p>(+251) 946-545-454</p>
+              <p>(+251) 946-545-454</p> or
+              <p>9858</p>
             </div>
           </div>
         </div>
@@ -1870,7 +1929,8 @@ const Home = () => {
           </p>
           <p className="mb-2">
             <i className="fa fa-envelope me-3" />
-            purposeblack.it@gmail.com
+            info@kegeberew.com ,
+            info@chinatoafrika.com
           </p>
           <div className="d-flex pt-2">
             <NavLink
@@ -1923,42 +1983,42 @@ const Home = () => {
             <div className="col-4">
               <img
                 className="img-fluid rounded"
-                src="../../assets/img/project-1.jpg"
+                src="../../assets/img/biro1.jpg"
                 alt=""
               />
             </div>
             <div className="col-4">
               <img
                 className="img-fluid rounded"
-                src="../../assets/img/project-2.jpg"
+                src="../../assets/img/biro2.jpg"
                 alt=""
               />
             </div>
             <div className="col-4">
               <img
                 className="img-fluid rounded"
-                src="../../assets/img/project-3.jpg"
+                src="../../assets/img/biro3.jpg"
                 alt=""
               />
             </div>
             <div className="col-4">
               <img
                 className="img-fluid rounded"
-                src="../../assets/img/project-4.jpg"
+                src="../../assets/img/biro4.jpg"
                 alt=""
               />
             </div>
             <div className="col-4">
               <img
                 className="img-fluid rounded"
-                src="../../assets/img/project-5.jpg"
+                src="../../assets/img/biro5.jpg"
                 alt=""
               />
             </div>
             <div className="col-4">
               <img
                 className="img-fluid rounded"
-                src="../../assets/img/project-6.jpg"
+                src="../../assets/img/biro6.jpg"
                 alt=""
               />
             </div>
